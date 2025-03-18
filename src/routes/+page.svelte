@@ -2,7 +2,7 @@
   <h1>Openbare Bibiliotheek Amsterdam</h1>
   <article>
     <p>
-      Van hartje centrum tot de Bijlmer. En van Nieuw-West tot
+      Van hartje centrum tot de Bijlmer van Nieuw-West tot
       Oud-Zuid. Met 28 vestigingen is de OBA in alle buurten thuis.
     </p>
     <p>
