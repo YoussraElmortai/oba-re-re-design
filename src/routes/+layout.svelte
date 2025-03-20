@@ -1,6 +1,16 @@
 <header>
-  <a href="/"><h1>OBA</h1></a>
+  <a href="/"
+    ><img
+      src="https://www.oba.nl/content/dam/logo/oba-logo.png"
+      alt="logo"
+    /></a
+  >
+  <ul>
+    <li><a href="/">uitloggen</a></li>
+    <li><a href="/">english</a></li>
+  </ul>
 </header>
+
 <nav>
   <ul>
     <li><a href="/">agenda</a></li>
@@ -9,16 +19,14 @@
     <li><a href="/">oba helpt</a></li>
     <li><a href="/">educatie</a></li>
   </ul>
-  <ul>
-    <li><a href="/">inloggen</a></li>
-    <li><a href="/">english</a></li>
-  </ul>
 </nav>
+<main>
+  <slot />
+</main>
 
-<slot />
 <footer>
   <div>
-    <span>Service</span>
+    <h4>Service</h4>
     <ul>
       <li><a href="/">lidmaatchappen</a></li>
       <li><a href="/">nieuws</a></li>
@@ -31,7 +39,7 @@
   </div>
 
   <div>
-    <span>zakelijk</span>
+    <h4>zakelijk</h4>
     <ul>
       <li><a href="/">over ons</a></li>
       <li><a href="/">vacatures</a></li>
@@ -42,7 +50,6 @@
   </div>
 
   <div>
-    <span>socials</span>
     <ul>
       <li><a href="/">instagram</a></li>
       <li><a href="/">bluesky</a></li>
@@ -59,3 +66,25 @@
     </ul>
   </div>
 </footer>
+
+<style>
+  header {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    font-weight: bold;
+
+    & img {
+      height: 2rem;
+      width: auto;
+    }
+
+    & ul {
+      list-style: "";
+      display: flex;
+      gap: 1rem;
+    }
+  }
+</style>
