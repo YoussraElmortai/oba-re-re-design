@@ -6,7 +6,7 @@
     /></a
   >
   <ul>
-    <li><a href="/">uitloggen</a></li>
+    <li><a href="/">inloggen</a></li>
     <li><a href="/">english</a></li>
   </ul>
 </header>
@@ -16,7 +16,6 @@
     <li><a href="/">agenda</a></li>
     <li><a href="/">collectie</a></li>
     <li><a href="/">jeugd</a></li>
-    <li><a href="/">oba helpt</a></li>
     <li><a href="/">educatie</a></li>
   </ul>
 </nav>
@@ -73,7 +72,7 @@
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem;
+    padding: 2rem 2rem 0;
     font-weight: bold;
 
     & img {
@@ -85,6 +84,40 @@
       list-style: "";
       display: flex;
       gap: 1rem;
+
+      & a {
+        padding-bottom: 0.2rem;
+        &:hover {
+          border-bottom: solid 2.5px red;
+        }
+      }
+    }
+  }
+
+  nav {
+    padding: 1.5rem 2rem;
+    font-weight: bold;
+    & ul {
+      list-style: " ";
+      display: flex;
+      gap: 1rem;
+    }
+
+    & a {
+      padding-bottom: 0.2rem;
+      &:hover {
+        border-bottom: solid 2.5px red;
+      }
+    }
+  }
+
+  footer {
+    & ul {
+      list-style: " ";
+      display: flex;
+      flex-flow: column;
+      gap: 0.5rem;
+      font-weight: bold;
     }
   }
 </style>
