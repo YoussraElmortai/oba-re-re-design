@@ -6,17 +6,16 @@
     /></a
   >
   <ul>
-    <li><a href="/">inloggen</a></li>
-    <li><a href="/">english</a></li>
+    <li><a href="/">inloggen<img src="/assets/login.svg" /></a></li>
   </ul>
 </header>
 
 <nav>
   <ul>
-    <li><a href="/">agenda</a></li>
-    <li><a href="/">collectie</a></li>
-    <li><a href="/">jeugd</a></li>
-    <li><a href="/">educatie</a></li>
+    <li><a href="/">agenda <img src="/assets/calendar.svg" /></a></li>
+    <li><a href="/">collectie<img src="/assets/books.svg" /></a></li>
+    <li><a href="/">jeugd<img src="/assets/kid.svg" /></a></li>
+    <li><a href="/">educatie<img src="/assets/school.svg" /></a></li>
   </ul>
 </nav>
 <main>
@@ -50,11 +49,51 @@
 
   <div>
     <ul>
-      <li><a href="/">instagram</a></li>
-      <li><a href="/">bluesky</a></li>
-      <li><a href="/">twitter</a></li>
-      <li><a href="/">facebook</a></li>
-      <li><a href="/">linkedin</a></li>
+      <li>
+        <a aria-label="instagram" href="/"
+          ><img
+            aria-hidden="true"
+            src="/assets/instagram.svg"
+            alt=""
+          /></a
+        >
+      </li>
+      <li>
+        <a aria-label="bluesky" href="/"
+          ><img
+            aria-hidden="true"
+            src="/assets/bluesky.svg"
+            alt=""
+          /></a
+        >
+      </li>
+      <li>
+        <a aria-label="twitter" href="/"
+          ><img
+            aria-hidden="true"
+            src="/assets/twitter.svg"
+            alt=""
+          /></a
+        >
+      </li>
+      <li>
+        <a aria-label="facebook" href="/"
+          ><img
+            aria-hidden="true"
+            src="/assets/facebook.svg"
+            alt=""
+          /></a
+        >
+      </li>
+      <li>
+        <a aria-label="linkedin" href="/"
+          ><img
+            aria-hidden="true"
+            src="/assets/linkedin.svg"
+            alt=""
+          /></a
+        >
+      </li>
     </ul>
   </div>
 
@@ -87,9 +126,9 @@
 
       & a {
         padding-bottom: 0.2rem;
-        &:hover {
-          border-bottom: solid 2.5px red;
-        }
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
       }
     }
   }
@@ -100,14 +139,15 @@
     & ul {
       list-style: " ";
       display: flex;
+      flex-flow: row;
       gap: 1rem;
     }
 
     & a {
       padding-bottom: 0.2rem;
-      &:hover {
-        border-bottom: solid 2.5px red;
-      }
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
   }
 
