@@ -19,6 +19,7 @@ body {
     flex-flow: column;
     height: 100vh;
     font-family: "Inter", sans-serif;
+    overflow-x: hidden;
 }
 
 main {
@@ -35,4 +36,8 @@ h2,
 h3,
 h4 {
     font-family: "Roboto", sans-serif
+}
+
+h2{
+    margin-bottom: 2.5rem;
 }
