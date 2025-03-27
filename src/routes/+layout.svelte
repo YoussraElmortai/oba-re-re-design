@@ -1,3 +1,61 @@
+<script>
+  import { onMount } from "svelte";
+
+  let magicLine;
+  let navItems = [];
+
+  onMount(() => {
+    navItems = document.querySelectorAll("[list-item]");
+    magicLine = document.querySelector(".magic_line");
+
+    if (navItems.length > 0) {
+      navItems[0].classList.add("active");
+      updateMagicLine(navItems[0]);
+    }
+
+    navItems.forEach((item) => {
+      item.addEventListener("mouseenter", handleMouseEnter);
+      item.addEventListener("mouseleave", handleMouseLeave);
+      item.addEventListener("click", handleClick);
+    });
+
+    return () => {
+      navItems.forEach((item) => {
+        item.removeEventListener("mouseenter", handleMouseEnter);
+        item.removeEventListener("mouseleave", handleMouseLeave);
+        item.removeEventListener("click", handleClick);
+      });
+    };
+  });
+
+  function handleMouseEnter(e) {
+    updateMagicLine(e.currentTarget);
+  }
+
+  function handleMouseLeave() {
+    const activeItem = document.querySelector("[list-item].active");
+    if (activeItem) {
+      updateMagicLine(activeItem);
+    }
+  }
+
+  function handleClick(e) {
+    navItems.forEach((i) => i.classList.remove("active"));
+    e.currentTarget.classList.add("active");
+    updateMagicLine(e.currentTarget);
+  }
+
+  function updateMagicLine(element) {
+    if (!magicLine) return;
+
+    const itemRect = element.getBoundingClientRect();
+    const navRect = element.closest("nav").getBoundingClientRect();
+
+    magicLine.style.width = `${itemRect.width}px`;
+    magicLine.style.left = `${itemRect.left - navRect.left}px`;
+  }
+</script>
+
 <header>
   <a href="/"
     ><img
@@ -12,19 +70,31 @@
 
 <nav>
   <ul>
-    <li><a href="/">agenda <img src="/assets/calendar.svg" /></a></li>
-    <li><a href="/">collectie<img src="/assets/books.svg" /></a></li>
-    <li><a href="/">jeugd<img src="/assets/kid.svg" /></a></li>
-    <li><a href="/">educatie<img src="/assets/school.svg" /></a></li>
+    <li list-item>
+      <a href="/">home <img src="/assets/calendar.svg" /></a>
+    </li>
+    <li list-item>
+      <a href="/agenda">agenda <img src="/assets/calendar.svg" /></a>
+    </li>
+    <li list-item>
+      <a href="/collectie">collectie<img src="/assets/books.svg" /></a>
+    </li>
+    <li list-item>
+      <a href="/jeugd">jeugd<img src="/assets/kid.svg" /></a>
+    </li>
+    <li list-item>
+      <a href="/educatie">educatie<img src="/assets/school.svg" /></a>
+    </li>
   </ul>
   <div class="magic_line"></div>
 </nav>
+
 <main>
   <slot />
 </main>
 
 <footer>
-  <div class="break" />
+  <div class="break"></div>
   <div class="footer_content">
     <h4>Service</h4>
     <ul>
@@ -49,6 +119,12 @@
     </ul>
   </div>
 
+  <div class="footer_content">
+    <ul>
+      <li><a href="/">privacystatement</a></li>
+      <li><a href="/">disclaimer</a></li>
+    </ul>
+  </div>
   <div class="footer_content">
     <ul>
       <li>
@@ -98,13 +174,6 @@
       </li>
     </ul>
   </div>
-
-  <div class="footer_content">
-    <ul>
-      <li><a href="/">privacystatement</a></li>
-      <li><a href="/">disclaimer</a></li>
-    </ul>
-  </div>
 </footer>
 
 <style>
@@ -136,17 +205,19 @@
   }
 
   nav {
+    position: relative;
     padding: 1.5rem 2rem;
     font-weight: bold;
     & ul {
+      position: relative;
       list-style: " ";
       display: flex;
       flex-flow: row;
-      gap: 1rem;
+      gap: 1.5rem;
     }
 
     & a {
-      padding-bottom: 0.2rem;
+      padding-bottom: 0.5rem;
       display: flex;
       align-items: center;
       gap: 0.5rem;
@@ -154,11 +225,11 @@
   }
 
   .magic_line {
-    width: 4rem;
+    position: absolute;
     height: 2px;
     background-color: red;
+    transition: all 0.3s ease-out;
   }
-
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -170,9 +241,13 @@
       flex-flow: column;
       gap: 0.5rem;
       font-weight: bold;
+
+      & li:hover{
+        color: red;
+      }
     }
 
-    & .footer_content:nth-last-child(2) {
+    & .footer_content:nth-last-child(1) {
       & ul:first-of-type {
         flex-flow: row;
         align-items: center;
