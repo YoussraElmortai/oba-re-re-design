@@ -17,13 +17,15 @@
     <li><a href="/">jeugd<img src="/assets/kid.svg" /></a></li>
     <li><a href="/">educatie<img src="/assets/school.svg" /></a></li>
   </ul>
+  <div class="magic_line"></div>
 </nav>
 <main>
   <slot />
 </main>
 
 <footer>
-  <div>
+  <div class="break" />
+  <div class="footer_content">
     <h4>Service</h4>
     <ul>
       <li><a href="/">lidmaatchappen</a></li>
@@ -36,7 +38,7 @@
     </ul>
   </div>
 
-  <div>
+  <div class="footer_content">
     <h4>zakelijk</h4>
     <ul>
       <li><a href="/">over ons</a></li>
@@ -47,7 +49,7 @@
     </ul>
   </div>
 
-  <div>
+  <div class="footer_content">
     <ul>
       <li>
         <a aria-label="instagram" href="/"
@@ -97,7 +99,7 @@
     </ul>
   </div>
 
-  <div>
+  <div class="footer_content">
     <ul>
       <li><a href="/">privacystatement</a></li>
       <li><a href="/">disclaimer</a></li>
@@ -151,7 +153,17 @@
     }
   }
 
+  .magic_line {
+    width: 4rem;
+    height: 2px;
+    background-color: red;
+  }
+
   footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
     & ul {
       list-style: " ";
       display: flex;
@@ -159,5 +171,25 @@
       gap: 0.5rem;
       font-weight: bold;
     }
+
+    & .footer_content:nth-last-child(2) {
+      & ul:first-of-type {
+        flex-flow: row;
+        align-items: center;
+      }
+    }
+  }
+
+  .break {
+    grid-column: span 2;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+  }
+
+  .footer_content {
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
   }
 </style>
