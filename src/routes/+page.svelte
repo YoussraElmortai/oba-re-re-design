@@ -1,8 +1,10 @@
 <script>
   
 </script>
+
 <section>
 <h2>Onze nieuwste boeken</h2>
+<!-- carousel -->
 </section>
 
 <section>
@@ -11,6 +13,7 @@
 
 <section>
     <h2>beleef met oba</h2>
+    <!-- stick on scroll cards -->
 </section>
 
 
