@@ -59,6 +59,7 @@
 <header>
   <a href="/"
     ><img
+      class="logo"
       src="https://www.oba.nl/content/dam/logo/oba-logo.png"
       alt="logo"
     /></a
@@ -98,6 +99,10 @@
     align-items: center;
     padding: 2rem 2rem 0;
     font-weight: bold;
+
+    & .logo {
+      height: 4rem;
+    }
 
     & img {
       height: 2rem;

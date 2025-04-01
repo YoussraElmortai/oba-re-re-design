@@ -1,42 +1,113 @@
 <script>
-  import { onMount } from 'svelte';
+  import { onMount } from "svelte";
 
-onMount(() => {
+  onMount(() => {
     document.addEventListener("DOMContentLoaded", () => {
-  const cards = document.querySelectorAll(".card");
-  let prevCardHeight = 0;
+      const cards = document.querySelectorAll(".card");
+      let prevCardHeight = 0;
 
-  cards.forEach((card, index) => {
-    if (index > 0) {
-      card.style.top = `${prevCardHeight}px`;
-      prevCardHeight += card.clientHeight; 
-    }
+      cards.forEach((card, index) => {
+        if (index > 0) {
+          card.style.top = `${prevCardHeight}px`;
+          prevCardHeight += card.clientHeight;
+        }
+      });
+    });
   });
-});
-});
 </script>
 
 <section>
   <h2>Onze nieuwste boeken</h2>
   <!-- carousel -->
+  <a href="/" class="button">Bekijk onze boekentips</a>
 </section>
 
 <section>
   <h2>Het laatste nieuws</h2>
+  <div class="news_container">
+    <article class="news">
+      <img src="" alt="" />
+      <div class="news_content">
+        <p></p>
+        <a href="/">lees meer</a>
+      </div>
+    </article>
+  </div>
+
+  <a href="/" class="button">Meer nieuws van de OBA</a>
 </section>
 
 <section class="sticky">
   <h2>beleef met oba</h2>
   <div class="sticky_container">
-    <div class="card">Card 1</div>
-    <div class="card">Card 2</div>
-    <div class="card">Card 3</div>
+    <article class="card">
+      <img src="/assets/senioren-lezen-samen.jpg" alt="" />
+      <div class="content">
+        <h3>Samen lezen voor senioren</h3>
+        <p>
+          Samen genieten we van mooie romanfragmenten, pakkende
+          verhalen en gedichten. De teksten brengen gesprekken op gang
+          en halen persoonlijke herinneringen naar boven. Iedereen kan
+          meedoen en voorbereiding is niet nodig!
+        </p>
+        <ul class="details">
+          <li>donderdag 3 april</li>
+          <li>10.00 tot 12.00</li>
+          <li>OBA Olympisch Kwartier</li>
+          <li>toegang gratis | vrije inloop</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="/assets/debat.jpeg" alt="" />
+      <div class="content">
+        <h3>Boeklezing | Nu de wereld niet meer kijkt</h3>
+        <p>
+          Samen met Stichting Global South Lens organiseren we een
+          boeiende middag met journalist en schrijver Eduard Cousin
+          over zijn boeken Nu de wereld niet meer kijkt en Alexandrië.
+          In zijn boeken beschrijft Cousin onder meer de vervlogen
+          hoop bij veel Egyptenaren na de Arabische Lente, een periode
+          die aanvankelijk vol optimisme was maar al snel
+          teleurstelling bracht.
+        </p>
+        <ul class="details">
+          <li>Zaterdag 5 april 2025</li>
+          <li>16:00 tot 17:30</li>
+          <li>OBA Slotermeer</li>
+          <li>toegang gratis | aanmelden vereist</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="/assets/voorlezen.jpeg" alt="" />
+      <div class="content">
+        <h3>Voorlezen en Knutselen 4+</h3>
+        <p>
+          Voorlezen & Knutselen is een activiteit speciaal voor de
+          kleinste creatievelingen. Iedere twee weken nodigen wij
+          kinderen van 4 jaar en ouder uit om te genieten van een
+          vrolijk verhaal en creatief aan de slag te gaan. Het is een
+          moment van plezier, leren en nieuwe ontdekkingen waar de
+          kinderen hun fantasie de vrije loop kunnen laten.
+        </p>
+        <ul class="details">
+          <li>Donderdag 10 april 2025</li>
+          <li>15:30 tot 16:30</li>
+          <li>OBA Duivendrecht</li>
+          <li>toegang gratis | vrije inloop</li>
+        </ul>
+      </div>
+    </article>
   </div>
+  <a href="/" class="button">Volledige culturele agenda</a>
 </section>
 
 <style>
   .sticky {
-    min-height: fit-content; 
+    min-height: fit-content;
     position: relative;
   }
 
@@ -46,6 +117,7 @@ onMount(() => {
     flex-flow: column;
     gap: 2rem;
     align-items: center;
+    margin-bottom: 2rem;
   }
 
   .card {
@@ -53,18 +125,46 @@ onMount(() => {
     top: 0;
     height: 70vh;
     width: 100%;
-    background: #ccc;
+    background: #f5f5f5;
     display: flex;
-    font-size: 3rem;
     border-radius: 0.5rem;
-  }
-  .card:nth-child(1) {
-    background: #777;
-  }
-  .card:nth-child(2) {
-    background: #555;
-  }
-  .card:nth-child(3) {
-    background: #333;
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+    padding: 0.5rem;
+
+    @media (min-width: 770px){
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+    }
+
+    &:nth-of-type(2n) {
+      background: #cccccc;
+    }
+
+    &:nth-of-type(3n) {
+      background: #bababa;
+    }
+
+    & img {
+      width: auto;
+      height: 50%;
+      object-fit: cover;
+      border-radius: 0.5rem;
+
+      @media (min-width: 770px){
+      width: 100%;
+      height: 100%;
+    }
+    }
+
+    & .content {
+      display: flex;
+      flex-flow: column;
+    }
+
+    & ul {
+      list-style: " ";
+    }
   }
 </style>
