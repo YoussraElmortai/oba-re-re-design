@@ -24,11 +24,11 @@
   >
 </section>
 
-<section>
+<section class="">
   <h2>Het laatste nieuws</h2>
   <div class="news_container">
     <article class="news">
-      <img
+      <img class="news_image"
         src="https://www.oba.nl/dam/nieuws/obaopschoolmbozuid-opening.jpg.rendition.384.614.jpeg"
         alt=""
       />
@@ -49,7 +49,7 @@
     </article>
 
     <article class="news">
-      <img
+      <img class="news_image"
         src="https://www.oba.nl/dam/nieuws/obaopschoolmbozuid-opening.jpg.rendition.384.614.jpeg"
         alt=""
       />
@@ -70,7 +70,7 @@
     </article>
 
     <article class="news">
-      <img
+      <img class="news_image"
         src="https://www.oba.nl/dam/nieuws/obaopschoolmbozuid-opening.jpg.rendition.384.614.jpeg"
         alt=""
       />
@@ -167,13 +167,25 @@
 </section>
 
 <style>
-  .news_container {
+  .news_container { 
+    height: 60vh;
+    display: flex;
+    flex-flow: row;
+    gap: 1.5rem;
     margin-bottom: 2rem;
   }
 
   .news {
     display: flex;
+    flex-flow: column;
+    height: 20rem;
+    width: 15rem;
     gap: 1.5rem;
+
+    & .news_image{
+      height: 5rem;
+    }
+
   }
   .sticky {
     min-height: fit-content;
