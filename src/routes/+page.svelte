@@ -19,22 +19,81 @@
 <section>
   <h2>Onze nieuwste boeken</h2>
   <!-- carousel -->
-  <a href="/" class="button">Bekijk onze boekentips</a>
+  <a href="/" class="button"
+    >Bekijk onze boekentips <img src="/assets/arrow.svg" /></a
+  >
 </section>
 
 <section>
   <h2>Het laatste nieuws</h2>
   <div class="news_container">
     <article class="news">
-      <img src="" alt="" />
+      <img
+        src="https://www.oba.nl/dam/nieuws/obaopschoolmbozuid-opening.jpg.rendition.384.614.jpeg"
+        alt=""
+      />
       <div class="news_content">
-        <p></p>
-        <a href="/">lees meer</a>
+        <h3>
+          OBA opent eerste mbo-schoolbibliotheek op MBO College Zuid
+        </h3>
+        <p>
+          Gisteren openden we op MBO College Zuid de eerste OBA
+          Schoolbibliotheek voor mbo-studenten. Deze samenwerking
+          tussen het ROC van Amsterdam (ROCvA)
+        </p>
+        <span class="news_date">26 maart</span>
+        <a class="inline_link" href="/"
+          >lees meer <img src="/assets/arrow.svg" /></a
+        >
+      </div>
+    </article>
+
+    <article class="news">
+      <img
+        src="https://www.oba.nl/dam/nieuws/obaopschoolmbozuid-opening.jpg.rendition.384.614.jpeg"
+        alt=""
+      />
+      <div class="news_content">
+        <h3>
+          OBA opent eerste mbo-schoolbibliotheek op MBO College Zuid
+        </h3>
+        <p>
+          Gisteren openden we op MBO College Zuid de eerste OBA
+          Schoolbibliotheek voor mbo-studenten. Deze samenwerking
+          tussen het ROC van Amsterdam (ROCvA)
+        </p>
+        <span class="news_date">26 maart</span>
+        <a class="inline_link" href="/"
+          >lees meer <img src="/assets/arrow.svg" /></a
+        >
+      </div>
+    </article>
+
+    <article class="news">
+      <img
+        src="https://www.oba.nl/dam/nieuws/obaopschoolmbozuid-opening.jpg.rendition.384.614.jpeg"
+        alt=""
+      />
+      <div class="news_content">
+        <h3>
+          OBA opent eerste mbo-schoolbibliotheek op MBO College Zuid
+        </h3>
+        <p>
+          Gisteren openden we op MBO College Zuid de eerste OBA
+          Schoolbibliotheek voor mbo-studenten. Deze samenwerking
+          tussen het ROC van Amsterdam (ROCvA)
+        </p>
+        <span class="news_date">26 maart</span>
+        <a class="inline_link" href="/"
+          >lees meer <img src="/assets/arrow.svg" /></a
+        >
       </div>
     </article>
   </div>
 
-  <a href="/" class="button">Meer nieuws van de OBA</a>
+  <a href="/" class="button"
+    >Meer nieuws van de OBA <img src="/assets/arrow.svg" /></a
+  >
 </section>
 
 <section class="sticky">
@@ -102,10 +161,20 @@
       </div>
     </article>
   </div>
-  <a href="/" class="button">Volledige culturele agenda</a>
+  <a href="/" class="button"
+    >Volledige culturele agenda <img src="/assets/arrow.svg" /></a
+  >
 </section>
 
 <style>
+  .news_container {
+    margin-bottom: 2rem;
+  }
+
+  .news {
+    display: flex;
+    gap: 1.5rem;
+  }
   .sticky {
     min-height: fit-content;
     position: relative;
@@ -133,17 +202,17 @@
     gap: 2rem;
     padding: 0.5rem;
 
-    @media (min-width: 770px){
+    @media (min-width: 770px) {
       display: grid;
       grid-template-columns: 1fr 1.2fr;
     }
 
     &:nth-of-type(2n) {
-      background: #cccccc;
+      background: #dfdfdf;
     }
 
     &:nth-of-type(3n) {
-      background: #bababa;
+      background: #d0d0d0;
     }
 
     & img {
@@ -152,10 +221,10 @@
       object-fit: cover;
       border-radius: 0.5rem;
 
-      @media (min-width: 770px){
-      width: 100%;
-      height: 100%;
-    }
+      @media (min-width: 770px) {
+        width: 100%;
+        height: 100%;
+      }
     }
 
     & .content {
