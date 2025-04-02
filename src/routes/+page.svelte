@@ -18,7 +18,43 @@
 
 <section>
   <h2>Onze nieuwste boeken</h2>
-  <!-- carousel -->
+  <ul>
+    <li>
+      <img
+        src="https://leibniz.zbkb.nl/assets/id/PPN%3A436719541?aid=ob-oba-lokaal-waas&sid=14&dts=1743610608606&sig=c654736f76693c3d4d298d77057b84190c5780cdaa6ac7e3b712ab6ed82407cf&width=100"
+        alt=""
+      />
+      <a href="/">Laat me binnen</a>
+      <span class="author">Manon Uphoff</span>
+    </li>
+
+    <li>
+      <img
+        src="https://leibniz.zbkb.nl/assets/id/PPN%3A44175127X?aid=ob-oba-lokaal-waas&sid=14&dts=1743610574120&sig=30745bc28a13c68c33c1586fda7e670da0d0e555cbfb425c5686ccfd99db9685&width=100"
+        alt=""
+      />
+      <a href="/">The women</a>
+      <span class="author">Kristin Hannah</span>
+    </li>
+
+    <li>
+      <img
+        src="https://leibniz.zbkb.nl/assets/id/PPN%3A443080828?aid=ob-oba-lokaal-waas&sid=14&dts=1743610574120&sig=d65df853721fa89d6778c6d2d8fbb272b7599da68a740e99bae7a2f91e6dfedf&width=100"
+        alt=""
+      />
+      <a href="/">Eekhoorn en de verbrgen schat</a>
+      <span class="author">Coralie Bickford-Smith</span>
+    </li>
+
+    <li>
+      <img
+        src="https://leibniz.zbkb.nl/assets/id/PPN%3A444199365?aid=ob-oba-lokaal-waas&sid=14&dts=1743610574120&sig=9dd7328493e7fcd83ec08fabede40939d7ab01a8882743812ef236b39beecc2a&width=100"
+        alt=""
+      />
+      <a href="/">Togo</a>
+      <span class="author">Fiona Rempt</span>
+    </li>
+  </ul>
   <a href="/" class="button"
     >Bekijk onze boekentips <img src="/assets/arrow.svg" /></a
   >
@@ -28,7 +64,8 @@
   <h2>Het laatste nieuws</h2>
   <div class="news_container">
     <article class="news">
-      <img class="news_image"
+      <img
+        class="news_image"
         src="https://www.oba.nl/dam/nieuws/obaopschoolmbozuid-opening.jpg.rendition.384.614.jpeg"
         alt=""
       />
@@ -48,7 +85,8 @@
     </article>
 
     <article class="news">
-      <img class="news_image"
+      <img
+        class="news_image"
         src="https://www.oba.nl/dam/nieuws/obaopschoolmbozuid-opening.jpg.rendition.384.614.jpeg"
         alt=""
       />
@@ -68,7 +106,8 @@
     </article>
 
     <article class="news">
-      <img class="news_image"
+      <img
+        class="news_image"
         src="https://www.oba.nl/dam/nieuws/obaopschoolmbozuid-opening.jpg.rendition.384.614.jpeg"
         alt=""
       />
@@ -93,7 +132,7 @@
   >
 </section>
 
-<section class="sticky">
+<section>
   <h2>beleef met oba</h2>
   <div class="sticky_container">
     <article class="card">
@@ -164,12 +203,12 @@
 </section>
 
 <style>
-  .news_container { 
+  .news_container {
     height: fit-content;
     display: flex;
     flex-flow: row wrap;
     gap: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
   }
 
   .news {
@@ -177,17 +216,13 @@
     flex-flow: column;
     gap: 1rem;
     width: 20rem;
+    height: 30rem;
 
-    & .news_image{
+    & .news_image {
       height: 15rem;
       object-fit: cover;
+      border-radius: 0.5rem;
     }
-  }
-
-
-  .sticky {
-    min-height: fit-content;
-    position: relative;
   }
 
   .sticky_container {
@@ -195,7 +230,6 @@
     display: flex;
     flex-flow: column;
     gap: 2rem;
-    align-items: center;
     margin-bottom: 2rem;
   }
 
@@ -207,7 +241,6 @@
     background: #f5f5f5;
     display: flex;
     border-radius: 0.5rem;
-    display: flex;
     flex-flow: column;
     gap: 2rem;
     padding: 0.5rem;
@@ -215,6 +248,7 @@
     @media (min-width: 770px) {
       display: grid;
       grid-template-columns: 1fr 1.2fr;
+      width: 60%;
     }
 
     &:nth-of-type(2n) {
