@@ -24,7 +24,7 @@
   >
 </section>
 
-<section class="">
+<section>
   <h2>Het laatste nieuws</h2>
   <div class="news_container">
     <article class="news">
@@ -41,7 +41,6 @@
           Schoolbibliotheek voor mbo-studenten. Deze samenwerking
           tussen het ROC van Amsterdam (ROCvA)
         </p>
-        <span class="news_date">26 maart</span>
         <a class="inline_link" href="/"
           >lees meer <img src="/assets/arrow.svg" /></a
         >
@@ -62,7 +61,6 @@
           Schoolbibliotheek voor mbo-studenten. Deze samenwerking
           tussen het ROC van Amsterdam (ROCvA)
         </p>
-        <span class="news_date">26 maart</span>
         <a class="inline_link" href="/"
           >lees meer <img src="/assets/arrow.svg" /></a
         >
@@ -83,7 +81,6 @@
           Schoolbibliotheek voor mbo-studenten. Deze samenwerking
           tussen het ROC van Amsterdam (ROCvA)
         </p>
-        <span class="news_date">26 maart</span>
         <a class="inline_link" href="/"
           >lees meer <img src="/assets/arrow.svg" /></a
         >
@@ -168,25 +165,26 @@
 
 <style>
   .news_container { 
-    height: 60vh;
+    height: fit-content;
     display: flex;
-    flex-flow: row;
-    gap: 1.5rem;
+    flex-flow: row wrap;
+    gap: 2rem;
     margin-bottom: 2rem;
   }
 
   .news {
     display: flex;
     flex-flow: column;
-    height: 20rem;
-    width: 15rem;
-    gap: 1.5rem;
+    gap: 1rem;
+    width: 20rem;
 
     & .news_image{
-      height: 5rem;
+      height: 15rem;
+      object-fit: cover;
     }
-
   }
+
+
   .sticky {
     min-height: fit-content;
     position: relative;
