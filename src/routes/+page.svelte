@@ -51,7 +51,7 @@
       />
       <div>
         <a class="book_title" href="/"
-          >Eekhoorn en de verbrgen schat</a
+          >Eekhoorn en de verborgen schat</a
         >
         <span class="author">Coralie Bickford-Smith</span>
       </div>
@@ -242,7 +242,7 @@
 
 <style>
   .books_container {
-    list-style: " ";
+    list-style: "";
     display: flex;
     overflow-x: scroll;
     gap: 1rem;
@@ -258,12 +258,15 @@
       & div {
         display: flex;
         flex-flow: column;
+        gap: 0.3rem;
+        text-align: center;
       }
     }
   }
 
   .book_title {
     font-weight: bold;
+    font-size: 18px;
   }
   .book_image {
     height: 15rem;
