@@ -307,14 +307,14 @@
   .card {
     position: sticky;
     top: 0;
-    height: 70vh;
+    height: fit-content;
     width: 100%;
     background: #f5f5f5;
     display: flex;
     border-radius: 0.5rem;
     flex-flow: column;
     gap: 2rem;
-    padding: 0.5rem;
+    padding: 1.5rem;
 
     @media (min-width: 770px) {
       display: grid;
