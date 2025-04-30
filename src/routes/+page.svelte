@@ -280,6 +280,10 @@
     flex-flow: row wrap;
     gap: 2rem;
     margin-bottom: 2.5rem;
+
+    @media (max-width: 640px) {
+      gap: 3rem;
+    }
   }
 
   .news {
@@ -288,6 +292,11 @@
     gap: 1rem;
     width: 20rem;
     height: 30rem;
+
+    @media (max-width: 640px) {
+      width: 100%;
+      border-bottom: solid #d0d0d0;
+    }
 
     & .news_image {
       height: 15rem;
