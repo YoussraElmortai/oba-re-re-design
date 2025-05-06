@@ -6,13 +6,11 @@
   let mobileMenuOpen = false;
 
   onMount(() => {
-    // Only initialize for desktop nav
     const desktopNav = document.querySelector(".desktop-nav");
     if (desktopNav) {
       navItems = desktopNav.querySelectorAll("[list-item]");
       magicLine = desktopNav.querySelector(".magic_line");
 
-      // Set initial magic line styles
       if (magicLine) {
         magicLine.style.opacity = "1";
       }
@@ -110,9 +108,9 @@
   </ul>
 </header>
 
-<!-- Mobile menu component later -->
-<div class="mobile-menu-wrapper" class:open={mobileMenuOpen}>
-  <nav class="mobile-nav">
+
+<nav class="mobile-menu-wrapper" class:open={mobileMenuOpen}>
+  <div class="mobile-nav">
     <ul>
       <li list-item>
         <a href="/">home <img src="/assets/home.svg" /></a>
@@ -133,10 +131,10 @@
         <a href="/">inloggen<img src="/assets/login.svg" /></a>
       </li>
     </ul>
-  </nav>
-</div>
+  </div>
+</nav>
 
-<!-- Desktop navigation -->
+
 <nav class="desktop-nav">
   <ul>
     <li list-item>
@@ -247,8 +245,8 @@
   }
 
   .mobile-menu-wrapper {
-    position: fixed;
-    top: -100%;
+    position: absolute;
+    top: -300%;
     left: 0;
     width: 100%;
     background: white;
@@ -275,13 +273,19 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
   }
+
 
   .mobile-nav a {
     padding: 0.5rem 0;
     display: flex;
     align-items: center;
     gap: 0.5rem;
+
+    &:hover{
+      color: red;
+    }
   }
 
   .login-mobile {

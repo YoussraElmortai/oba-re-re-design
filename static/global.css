@@ -39,9 +39,14 @@ h4 {
     font-family: "Roboto", sans-serif
 }
 
+h1{
+    margin-bottom: 3rem;
+    font-size: 38px;
+}
+
 h2 {
     margin-bottom: 2.5rem;
-    font-size: 28px;
+    font-size: 30px;
 }
 
 h3 {

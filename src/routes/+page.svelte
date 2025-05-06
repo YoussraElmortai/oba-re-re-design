@@ -16,6 +16,13 @@
   });
 </script>
 
+<section class="hero">
+  <h1>Word nu lid van de oba</h1>
+  <a href="/" class="button"
+    >Onze lidmaatschappen <img src="/assets/arrow.svg" /></a
+  >
+</section>
+
 <section>
   <h2>Onze nieuwste boeken</h2>
   <ul class="books_container">
@@ -247,7 +254,7 @@
     overflow-x: scroll;
     gap: 1rem;
     margin-bottom: 2.5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
 
     & li {
       display: flex;
