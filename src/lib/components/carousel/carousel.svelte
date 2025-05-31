@@ -84,7 +84,7 @@
     scroll-snap-type: x mandatory;
     gap: 1rem;
     margin-bottom: 2.5rem;
-    anchor-name: --carousel;
+    scrollbar-width: none;
 
     & li {
       display: flex;
