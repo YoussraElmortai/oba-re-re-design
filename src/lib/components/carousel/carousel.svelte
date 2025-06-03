@@ -3,75 +3,106 @@
 
 <ul class="books_container">
   <li>
+    <span class="type">e-book</span>
     <img
       class="book_image"
-      src="https://leibniz.zbkb.nl/assets/id/PPN%3A436719541?aid=ob-oba-lokaal-waas&sid=14&dts=1743610608606&sig=c654736f76693c3d4d298d77057b84190c5780cdaa6ac7e3b712ab6ed82407cf&width=100"
+      src="https://oba.nl/_next/image?url=https%3A%2F%2Fv2.leibniz.zbkb.nl%2Fassets%2Fid%2FPPN%253A439502799%3Faid%3Dils-clarivate-landelijk%26sid%3D16%26dts%3D1748926477180%26width%3D500%26sig%3Db5b24adad0920bfe1c24ad703917d60d26dd21758187249cbd08f7199f7fbc1a&w=1920&q=75"
       alt=""
     />
     <div>
-      <a class="book_title" href="/">Laat me binnen</a>
-      <span class="author">Manon Uphoff</span>
+      <a class="book_title" href="/">Oroppa</a>
+      <span class="author">Safae el Khannoussi</span>
     </div>
   </li>
 
   <li>
+    <span class="type">e-book</span>
     <img
       class="book_image"
-      src="https://leibniz.zbkb.nl/assets/id/PPN%3A44175127X?aid=ob-oba-lokaal-waas&sid=14&dts=1743610574120&sig=30745bc28a13c68c33c1586fda7e670da0d0e555cbfb425c5686ccfd99db9685&width=100"
+      src="https://oba.nl/_next/image?url=https%3A%2F%2Fv2.leibniz.zbkb.nl%2Fassets%2Fid%2FPPN%253A448043505%3Faid%3Dils-clarivate-landelijk%26sid%3D16%26dts%3D1748931174007%26width%3D500%26sig%3D6692a471e65a6c90f438d9d539e8883436bf4840282d047c29a1452260ad59ee&w=1080&q=75"
       alt=""
     />
     <div>
-      <a class="book_title" href="/">The women</a>
-      <span class="author">Kristin Hannah</span>
+      <a class="book_title" href="/">Beladen huis</a>
+      <span class="author">Christien Brinkgreve</span>
     </div>
   </li>
 
   <li>
+    <span class="type">book</span>
     <img
       class="book_image"
-      src="https://leibniz.zbkb.nl/assets/id/PPN%3A443080828?aid=ob-oba-lokaal-waas&sid=14&dts=1743610574120&sig=d65df853721fa89d6778c6d2d8fbb272b7599da68a740e99bae7a2f91e6dfedf&width=100"
+      src="https://oba.nl/_next/image?url=https%3A%2F%2Fcover.biblion.nl%2Fcoverlist.dll%3Fdoctype%3Dmorebutton%26bibliotheek%3Doba%26style%3D0%26ppn%3D371736617%26isbn%3D9789025443535%26lid%3D%26aut%3D%26ti%3D%26size%3D500&w=1080&q=75"
       alt=""
     />
     <div>
-      <a class="book_title" href="/">Eekhoorn en de verborgen schat</a
-      >
-      <span class="author">Coralie Bickford-Smith</span>
+      <a class="book_title" href="/">Hier wonen ook mensen</a>
+      <span class="author">Rob van Essen</span>
     </div>
   </li>
 
   <li>
+    <span class="type">book</span>
     <img
       class="book_image"
-      src="https://leibniz.zbkb.nl/assets/id/PPN%3A444199365?aid=ob-oba-lokaal-waas&sid=14&dts=1743610574120&sig=9dd7328493e7fcd83ec08fabede40939d7ab01a8882743812ef236b39beecc2a&width=100"
+      src="https://oba.nl/_next/image?url=https%3A%2F%2Fcover.biblion.nl%2Fcoverlist.dll%3Fdoctype%3Dmorebutton%26bibliotheek%3Doba%26style%3D0%26ppn%3D308148002%26isbn%3D9789026321320%26lid%3D%26aut%3D%26ti%3D%26size%3D500&w=1920&q=75"
       alt=""
     />
     <div>
-      <a class="book_title" href="/">Togo</a>
-      <span class="author">Fiona Rempt</span>
+      <a class="book_title" href="/">Zij denkt dus zij bestaat</a>
+      <span class="author">Manon Duintjer</span>
     </div>
   </li>
 
   <li>
+    <span class="type">book</span>
     <img
       class="book_image"
-      src="https://leibniz.zbkb.nl/assets/id/PPN%3A444265554?aid=ob-oba-lokaal-waas&sid=14&dts=1743638505452&sig=f6f04284160bae51164e5a1eaeca0d7a6b30d15056b2bd23efab410d3ec835b0&width=100"
+      src="https://oba.nl/_next/image?url=https%3A%2F%2Fcover.biblion.nl%2Fcoverlist.dll%3Fdoctype%3Dmorebutton%26bibliotheek%3Doba%26style%3D0%26ppn%3D435555170%26isbn%3D9789026360251%26lid%3D%26aut%3D%26ti%3D%26size%3D500&w=1920&q=75"
       alt=""
     />
     <div>
-      <a class="book_title" href="/">Vuur en nuance</a>
-      <span class="author">Marjolein Moorman | Rutger</span>
+      <a class="book_title" href="/">Nooit meer bang op je werk</a>
+      <span class="author">Jolein de Rooij</span>
     </div>
   </li>
 
   <li>
+    <span class="type">book</span>
     <img
       class="book_image"
-      src="https://leibniz.zbkb.nl/assets/id/PPN%3A443940975?aid=ob-oba-lokaal-waas&sid=14&dts=1743638505452&sig=3fff80eac3e6519b700263d833ad5f5aabbecad7d008f7c855024cdd5c56f13c&width=100"
+      src="https://oba.nl/_next/image?url=https%3A%2F%2Fcover.biblion.nl%2Fcoverlist.dll%3Fdoctype%3Dmorebutton%26bibliotheek%3Doba%26style%3D0%26ppn%3D413338835%26isbn%3D9789403107707%26lid%3D%26aut%3D%26ti%3D%26size%3D500&w=1080&q=75"
       alt=""
     />
     <div>
-      <a class="book_title" href="/">Juice</a>
-      <span class="author">Tim Winton</span>
+      <a class="book_title" href="/">Slaap</a>
+      <span class="author">Lars Kepler, Jasper Popma</span>
+    </div>
+  </li>
+
+  <li>
+    <span class="type">book</span>
+    <img
+      class="book_image"
+      src="https://oba.nl/_next/image?url=https%3A%2F%2Fcover.biblion.nl%2Fcoverlist.dll%3Fdoctype%3Dmorebutton%26bibliotheek%3Doba%26style%3D0%26ppn%3D423637223%26isbn%3D9789403173702%26lid%3D%26aut%3D%26ti%3D%26size%3D500&w=1080&q=75"
+      alt=""
+    />
+    <div>
+      <a class="book_title" href="/">Het Hollandse Huis</a>
+      <span class="author">Ann Patchett, Hi-en Montijn</span>
+    </div>
+  </li>
+
+  <li>
+    <span class="type">book</span>
+    <img
+      class="book_image"
+      src="https://oba.nl/_next/image?url=https%3A%2F%2Fcover.biblion.nl%2Fcoverlist.dll%3Fdoctype%3Dmorebutton%26bibliotheek%3Doba%26style%3D0%26ppn%3D44052041X%26isbn%3D9789044367904%26lid%3D%26aut%3D%26ti%3D%26size%3D500&w=1920&q=75"
+      alt=""
+    />
+    <div>
+      <a class="book_title" href="/">Yellowface</a>
+      <span class="author">Rebecca F. Kuang</span>
     </div>
   </li>
 </ul>
@@ -87,10 +118,11 @@
     scrollbar-width: none;
 
     & li {
+      position: relative;
       display: flex;
       flex-flow: column;
       scroll-snap-align: center;
-      max-width: 10rem;
+      max-width: 15rem;
       gap: 0.5rem;
 
       & div {
@@ -102,14 +134,23 @@
     }
   }
 
+  .type {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    padding: 0.2rem 0.5rem;
+    background: red;
+    color: white;
+    border-radius: 0.5rem;
+  }
+
   .book_title {
     font-weight: bold;
     font-size: 18px;
   }
   .book_image {
-    height: 15rem;
-    width: 10rem;
-    object-fit: cover;
+    height: 20rem;
+    width: 15rem;
     border-radius: 0.5rem;
   }
 </style>

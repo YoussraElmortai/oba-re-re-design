@@ -86,11 +86,7 @@
 
 <header>
   <a href="/">
-    <img
-      class="logo"
-      src="https://www.oba.nl/content/dam/logo/oba-logo.png"
-      alt="logo"
-    />
+    <img class="logo" src="/assets/oba.svg" alt="logo" />
   </a>
 
   <div class="mobile-menu-container">
@@ -108,7 +104,6 @@
   </ul>
 </header>
 
-
 <nav class="mobile-menu-wrapper" class:open={mobileMenuOpen}>
   <div class="mobile-nav">
     <ul>
@@ -116,16 +111,21 @@
         <a href="/">home <img src="/assets/home.svg" /></a>
       </li>
       <li list-item>
-        <a href="/agenda">agenda <img src="/assets/calendar.svg" /></a>
+        <a href="/agenda">agenda <img src="/assets/calendar.svg" /></a
+        >
       </li>
       <li list-item>
-        <a href="/collectie">collectie<img src="/assets/books.svg" /></a>
+        <a href="/collectie"
+          >collectie<img src="/assets/books.svg" /></a
+        >
       </li>
       <li list-item>
         <a href="/jeugd">jeugd<img src="/assets/kid.svg" /></a>
       </li>
       <li list-item>
-        <a href="/educatie">educatie<img src="/assets/school.svg" /></a>
+        <a href="/educatie"
+          >educatie<img src="/assets/school.svg" /></a
+        >
       </li>
       <li class="login-mobile">
         <a href="/">inloggen<img src="/assets/login.svg" /></a>
@@ -133,7 +133,6 @@
     </ul>
   </div>
 </nav>
-
 
 <nav class="desktop-nav">
   <ul>
@@ -144,7 +143,8 @@
       <a href="/agenda">agenda <img src="/assets/calendar.svg" /></a>
     </li>
     <li list-item>
-      <a href="/collectie">collectie<img src="/assets/books.svg" /></a>
+      <a href="/collectie">collectie<img src="/assets/books.svg" /></a
+      >
     </li>
     <li list-item>
       <a href="/jeugd">jeugd<img src="/assets/kid.svg" /></a>
@@ -167,10 +167,6 @@
     position: relative;
     z-index: 10;
     background: white;
-  }
-
-  .logo {
-    height: 4rem;
   }
 
   header img:not(.menu-icon) {
@@ -253,7 +249,7 @@
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(46, 44, 44, 0.176);
     z-index: 5;
-    transition: top 0.3s ease-out;
+    transition: top 1.5s ease-out;
     overflow: hidden;
   }
 
@@ -273,9 +269,7 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-
   }
-
 
   .mobile-nav a {
     padding: 0.5rem 0;
@@ -283,7 +277,7 @@
     align-items: center;
     gap: 0.5rem;
 
-    &:hover{
+    &:hover {
       color: red;
     }
   }
