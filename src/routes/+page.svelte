@@ -6,7 +6,7 @@
   import Sticky from "$lib/components/sticky/sticky.svelte";
 </script>
 
-<section class="hero">
+<section>
   <Hero />
   <a href="/" class="button"
     >Onze lidmaatschappen <img src="/assets/arrow.svg" /></a

@@ -96,3 +96,7 @@ p {
 section {
     margin-bottom: 3.2rem;
 }
+
+.accent{
+    color: red;
+}
