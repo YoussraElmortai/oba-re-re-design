@@ -7,7 +7,6 @@ This consideration was crucial because the functionalities should be accessible 
 
 ### Landingpage
 
-### Dashboard
 
 ### Highlights
 
