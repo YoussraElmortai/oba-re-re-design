@@ -37,6 +37,3 @@
     >Volledig culturele agenda <img src="/assets/arrow.svg" /></a
   >
 </section>
-
-<style>
-</style>

@@ -3,8 +3,8 @@
 
 <section class="hero">
   <h1>
-    Als lid van de <span class="accent">OBA</span> krijg je toegang tot onze collectie, korting op
-    evenementen en een heleboel andere voordelen.
+    Als lid van de <span class="accent">OBA</span> krijg je toegang tot
+    onze collectie, korting op evenementen en een heleboel andere voordelen.
   </h1>
   <div class="gradient">
     <img
@@ -22,24 +22,34 @@
     justify-content: end;
     height: 70vh;
 
+    & h1 {
+      z-index: 1;
+      padding: 1.5rem 2rem;
+      margin-bottom: 1rem;
+      color: white;
 
-    & h1{
-        z-index: 1;
-        padding: 1.5rem 2rem;
-        color: white;
+      @media (max-width: 769px) {
+        font-size: 30px;
+        padding: 1rem 1.5rem;
+      }
     }
   }
 
-  .gradient{
+  .gradient {
     position: absolute;
     top: 0;
     height: 100%;
     width: 100%;
-    background: linear-gradient( #33333324, #33333384 50%, #3c3c3cd7 70%, #262525d0 100%);
-        border-radius: 0.5rem;
+    background: linear-gradient(
+      #33333324,
+      #33333384 50%,
+      #3c3c3cd7 70%,
+      #262525d0 100%
+    );
+    border-radius: 0.5rem;
   }
 
-  .hero-img{
+  .hero-img {
     position: absolute;
     top: 0;
     height: 100%;
