@@ -116,6 +116,20 @@
     gap: 1rem;
     margin-bottom: 2.5rem;
     scrollbar-width: none;
+    -webkit-mask: linear-gradient(
+      90deg,
+      transparent,
+      #ffffff 5%,
+      #ffffff 8%,
+      transparent
+    );
+    mask: linear-gradient(
+      90deg,
+      transparent,
+      #ffffff 5%,
+      #ffffff 95%,
+      transparent
+    );
 
     & li {
       position: relative;
