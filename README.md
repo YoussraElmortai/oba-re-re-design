@@ -10,5 +10,10 @@ This consideration was crucial because the functionalities should be accessible 
 
 ### Highlights
 
+## magic line
+## mobile nav
+## sticky scroll
+
+
 
 
