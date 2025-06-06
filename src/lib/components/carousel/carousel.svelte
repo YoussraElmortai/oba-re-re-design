@@ -115,7 +115,7 @@
     scroll-snap-type: x mandatory;
     gap: 1rem;
     margin-bottom: 2.5rem;
-    scrollbar-width: none;
+    padding-bottom: 2rem;
     -webkit-mask: linear-gradient(
       90deg,
       transparent,
